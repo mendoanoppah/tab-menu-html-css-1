@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-poppins: "Poppins";
+  --bg-color: #b15454;
+  --body-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.radio-inputs-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+  font-family: var(--font-poppins);
+}
+
+.radio-inputs-container .radio-input {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs-container .radio-input input {
+  display: none;
+}
+
+.radio-inputs-container .radio-input .text-bar-name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs-container .radio-input input:checked + .text-bar-name {
+  background-color: #fff;
+  font-weight: 600;
+  color: var(--bg-color);
+  box-shadow: rgb(85, 85, 85) inset 0 0 2px;
+  transition: all 0.35s;
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: center;
+  /* box-shadow: 0 0 10px rgba(150, 0, 0, 0.35); */
+  text-shadow: 0 0 10px rgba(150, 0, 0, 0.74);
+  background: none !important;
+  border: none !important;
+}
